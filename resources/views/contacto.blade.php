@@ -110,7 +110,7 @@
 
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <label for="Name"></label>
-                                        <input class="form-control" placeholder="Nombre" type="text" name="Name" id="Name" value="{{ old('name') }}">
+                                        <input class="form-control" placeholder="Nombre" type="text" name="Name" id="Name" value="{{ old('Name') }}">
                                         @error('Name')
                                             <i>{{ $message }}</i>
                                         @enderror

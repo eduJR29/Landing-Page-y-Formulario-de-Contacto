@@ -21,7 +21,7 @@ class SitioController extends Controller
         $request->validate([
             'Name'=>'required|max:255|min:3',
             'Email'=>['required', 'email'],
-            'Phone'=>'required',
+            'Phone'=>'required|min:10|max:10',
             'Message'=>'required',
         ]);
     }

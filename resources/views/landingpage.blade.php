@@ -65,7 +65,7 @@
                                             <ul class="menu-area-main">
                                                 <li class="active"> <a href="landingpage">Inicio</a> </li>
                                                 <li> <a href="#about">Sobre Nosotros</a> </li>
-                                                <li><a href="contacto">Contactanos</a></li>
+                                                <li><a href="contacto">Contacto</a></li>
 
                                             </ul>
                                         </nav>
