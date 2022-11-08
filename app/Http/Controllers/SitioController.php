@@ -24,8 +24,8 @@ class SitioController extends Controller
             $nombre;
             $correo;
         }else{
-            $nombre = null;
-            $correo = null;
+            $nombre = '';
+            $correo = '';
         }
         return view('contacto', compact('nombre','correo'));
         //return view('contacto', compact('codigos','cod'));
@@ -34,8 +34,8 @@ class SitioController extends Controller
     public function recibeFormContacto(Request $request)
     {
         $request->validate([
-            'Name'=>'required|max:255|min:3',
-            'Email'=>['required', 'email'],
+            'Name'=>['required','max:255','min:3'],
+            'Email'=>'required|email',
             'Phone'=>'required|min:10|max:10',
             'Message'=>'required',
         ]);
