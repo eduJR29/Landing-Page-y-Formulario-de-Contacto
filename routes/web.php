@@ -21,5 +21,5 @@ Route::get('/', function () {
 
 Route::get('/actualizaciones/{version_id?}', [PaginaController::class, 'actualizaciones']);
 Route::get('/landingpage', [SitioController::class, 'landingpage']);
-Route::get('/contacto', [SitioController::class, 'contacto']);
+Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto']);
 Route::post('/recibe-form-contacto', [SitioController::class, 'recibeFormContacto']);

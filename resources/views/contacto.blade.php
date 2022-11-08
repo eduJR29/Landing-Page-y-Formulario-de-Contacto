@@ -109,28 +109,28 @@
                                 <div class="row">
 
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <label for="Name"></label>
-                                        <input class="form-control" placeholder="Nombre" type="text" name="Name" id="Name" value="{{ old('Name') }}">
+                                        <label for="Name">Nombre:</label>
+                                        <input class="form-control" placeholder="Nombre" type="text" name="Name" id="Name" value="{{ $nombre ??'' }}" value="{{ old('Name') }}">
                                         @error('Name')
                                             <i>{{ $message }}</i>
                                         @enderror
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <label for="Email"></label>
-                                        <input class="form-control" placeholder="Correo" type="mail" name="Email" id="Email" value="{{ old('Email') }}">
+                                        <label for="Email">Correo:</label>
+                                        <input class="form-control" placeholder="Correo" type="mail" name="Email" id="Email" value="{{ $correo ??'' }}" value="{{ old('Email') }}">
                                         @error('Email')
                                             <i>{{ $message }}</i>
                                         @enderror
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <label for="Phone"></label>
+                                        <label for="Phone">Teléfono:</label>
                                         <input class="form-control" placeholder="Telefono" type="text" name="Phone" id="Phone" value="{{ old('Phone') }}">
                                         @error('Phone')
                                             <i>{{ $message }}</i>
                                         @enderror
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <label for="Message"></label>
+                                        <label for="Message">Nota</label>
                                         <textarea class="textarea" placeholder="Nota" type="text" name="Message" id="Message" value="{{ old('Message') }}"></textarea>
                                         @error('Message')
                                             <i>{{ $message }}</i>
